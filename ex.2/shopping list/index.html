@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+</head>
+<body>
+    <h1>Список покупок:</h1>
+    <form action="index.html" method="get">
+        <fieldset>
+            <legend>
+                Выберите необходимые параметры:
+            </legend>
+        
+        <ol>
+            <li>
+                <label>Выберите товар:</label>
+                    <input type="checkbox" name="apple" id="apple">
+                    <label for="apple">Яблоко</label>
+                    <input type="checkbox" name="carrot" id="carrot">
+                    <label for="carrot">Морковь</label>
+                    <input type="checkbox" name="cabbage" id="cabbage">
+                    <label for="cabbage">Капуста</label>
+            </li>
+            <li>
+                <label>Укажите вес товара:</label>
+                <input type="text" name="weight" placeholder="0">
+            </li>
+            <li>
+                <label>
+                    С доставкой?
+                </label>
+                <input type="radio" name="delivery" value="yes">
+                <label for="yes">Да</label>
+                <input type="radio" name="delivery" value="no">
+                <label for="no">Нет</label>
+            </li>
+            <li>
+                <label>
+                    Оплата:
+                    <select>
+                        <option>Наложенный платеж</option>
+                        <option>Предоплата</option>
+                    </select>
+                </label>
+            </li>
+        </ol>
+    </fieldset>
+    <button name="submit" type="submit" autofocus>Подтвердить</button>
+    <button name="reset" type="reset">Сброс</button>
+    </form>
+</body>
+</html>
